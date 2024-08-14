@@ -1,1 +1,1 @@
-** Munchy Healthy Eating **
+Munchy Healthy Eating

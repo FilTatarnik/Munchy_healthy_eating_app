@@ -1,11 +1,15 @@
 import React from 'react';
 import './App.css';
-import MunchyClone from './components/MunchyClone';
+import NavBar from './components/NavBar';
+import Main from './components/Main';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <MunchyClone />
+      <NavBar />
+      <Main />
+      <Footer />
     </div>
   );
 }

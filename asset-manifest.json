@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/FilTatarnik/Munchy_healthy_eating_app/static/css/main.1d861794.css",
-    "main.js": "/FilTatarnik/Munchy_healthy_eating_app/static/js/main.44c1734e.js",
-    "static/js/453.7ee3356d.chunk.js": "/FilTatarnik/Munchy_healthy_eating_app/static/js/453.7ee3356d.chunk.js",
-    "index.html": "/FilTatarnik/Munchy_healthy_eating_app/index.html",
-    "main.1d861794.css.map": "/FilTatarnik/Munchy_healthy_eating_app/static/css/main.1d861794.css.map",
-    "main.44c1734e.js.map": "/FilTatarnik/Munchy_healthy_eating_app/static/js/main.44c1734e.js.map",
-    "453.7ee3356d.chunk.js.map": "/FilTatarnik/Munchy_healthy_eating_app/static/js/453.7ee3356d.chunk.js.map"
+    "main.css": "/filtatarnik.github.io/Munchy_healthy_eating_app/static/css/main.1d861794.css",
+    "main.js": "/filtatarnik.github.io/Munchy_healthy_eating_app/static/js/main.3d5fd26c.js",
+    "static/js/453.7ee3356d.chunk.js": "/filtatarnik.github.io/Munchy_healthy_eating_app/static/js/453.7ee3356d.chunk.js",
+    "index.html": "/filtatarnik.github.io/Munchy_healthy_eating_app/index.html",
+    "main.1d861794.css.map": "/filtatarnik.github.io/Munchy_healthy_eating_app/static/css/main.1d861794.css.map",
+    "main.3d5fd26c.js.map": "/filtatarnik.github.io/Munchy_healthy_eating_app/static/js/main.3d5fd26c.js.map",
+    "453.7ee3356d.chunk.js.map": "/filtatarnik.github.io/Munchy_healthy_eating_app/static/js/453.7ee3356d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1d861794.css",
-    "static/js/main.44c1734e.js"
+    "static/js/main.3d5fd26c.js"
   ]
 }

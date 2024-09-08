@@ -178,6 +178,9 @@ main {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 90%;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 2rem 5%;
   text-align: center;
@@ -228,7 +231,7 @@ footer {
   }
 
   .navbar {
-    position: fixed;
+    /* position: fixed; */
     order: 2;
   }
 

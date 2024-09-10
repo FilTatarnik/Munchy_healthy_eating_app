@@ -6,15 +6,15 @@ const Footer = () => {
       <div className="footer-logo">MUNCHY</div>
       <div className="footer-links">
         <a href="#home">Home</a>
-        <a href="#features">Features</a>
-        <a href="#testimonials">Testimonials</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#workouts">Workouts</a>
       </div>
       <div className="footer-bottom">
         <div className="footer-legal">
-          <a href="#">Privacy Notice</a>
-          <a href="#">Imprint</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
         </div>
-        <button className="waitlist-button">Join Waitlist</button>
+        <p>&copy; 2024 Munchy. All rights reserved.</p>
       </div>
     </footer>
   );

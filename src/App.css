@@ -57,33 +57,19 @@ header {
   cursor: pointer;
 }
 
-.header-buttons {
-  display: flex;
-  gap: 1rem;
-}
-
-.about-button, .waitlist-button {
+.about-button {
   padding: 0.5rem 1rem;
   border-radius: 9999px;
-  border: none;
+  border: 1px solid #333;
+  background-color: transparent;
   cursor: pointer;
   font-weight: bold;
-}
-
-.about-button {
-  background-color: transparent;
-  border: 1px solid #333;
-}
-
-.waitlist-button {
-  background-color: #333;
-  color: white;
 }
 
 main {
   flex: 1;
   overflow-y: auto;
-  padding-bottom: 2rem; /* Add some padding at the bottom */
+  padding-bottom: 2rem;
 }
 
 .section {
@@ -104,13 +90,13 @@ main {
   margin-bottom: 2rem;
 }
 
-.boost-input {
+.subscribe-form {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
 }
 
-.boost-input input {
+.subscribe-form input {
   padding: 0.75rem 1rem;
   border-radius: 9999px 0 0 9999px;
   border: none;
@@ -118,7 +104,7 @@ main {
   font-size: 1rem;
 }
 
-.boost-input button {
+.subscribe-form button {
   padding: 0.75rem 1.5rem;
   border-radius: 0 9999px 9999px 0;
   border: none;
@@ -128,7 +114,7 @@ main {
   cursor: pointer;
 }
 
-.boost-description {
+.subscribe-description {
   font-size: 1rem;
   color: #666;
 }
@@ -145,46 +131,34 @@ main {
   object-fit: cover;
 }
 
-.features h2, .testimonials h2 {
+.recipes h2, .workouts h2 {
   font-size: 2.5rem;
   margin-bottom: 3rem;
 }
  
-.feature-grid, .testimonial-grid {
+.recipe-grid, .workout-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
 }
 
-.feature-item, .testimonial-item {
+.recipe-item, .workout-item {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.feature-item h3 {
+.recipe-item h3, .workout-item h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.testimonial-item p {
-  font-style: italic;
-  margin-bottom: 1rem;
-}
-
-.testimonial-item span {
-  font-weight: bold;
-}
-
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 90%;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 2rem 5%;
   text-align: center;
-  margin-top: auto; /* Push footer to the bottom */
+  margin-top: auto;
 }
 
 .footer-logo {
@@ -209,13 +183,14 @@ footer {
 
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
 }
 
 .footer-legal {
   display: flex;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .footer-legal a {
@@ -223,39 +198,83 @@ footer {
   text-decoration: none;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  margin-bottom: 4px;
+  transition: all 0.3s ease;
+}
+
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: flex;
   }
 
   .navbar {
-    /* position: fixed; */
-    order: 2;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1rem;
   }
 
-  .header-buttons {
-    order: 3;
+  .navbar.open {
+    display: flex;
   }
 
-  .logo {
-    font-size: 2rem;
+  .navbar a, .about-button {
+    padding: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-button {
+    margin-top: 1rem;
+  }
+
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
   }
 
   .main-title {
     font-size: 2rem;
   }
 
-  .boost-input {
+  .subscribe-form {
     flex-direction: column;
     width: 100%;
   }
 
-  .boost-input input,
-  .boost-input button {
+  .subscribe-form input,
+  .subscribe-form button {
     width: 100%;
     border-radius: 9999px;
+  }
+
+  .subscribe-form input {
+    margin-bottom: 0.5rem;
   }
 
   .footer-bottom {

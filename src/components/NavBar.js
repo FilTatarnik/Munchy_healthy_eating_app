@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-scroll';
 
-const NavBar = ({ toggleAboutUs }) => {
+const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef(null);
 
@@ -10,7 +11,7 @@ const NavBar = ({ toggleAboutUs }) => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (navRef.current && !navRef.current.contains(event.target) && !event.target.closest('.hamburger')) {
+      if (navRef.current && !navRef.current.contains(event.target)) {
         setIsOpen(false);
       }
     };
@@ -23,17 +24,17 @@ const NavBar = ({ toggleAboutUs }) => {
 
   return (
     <header>
-      <h1 className="logo"><a href="#home" className="no-link-style">MUNCHY</a></h1>
+      <h1 className="logo"><Link to="home" smooth={true} duration={500} className="no-link-style">MUNCHY</Link></h1>
       <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <span></span>
         <span></span>
         <span></span>
       </div>
       <nav ref={navRef} className={`navbar ${isOpen ? 'open' : ''}`}>
-        <a href="#home" onClick={toggleMenu}>Home</a>
-        <a href="#recipes" onClick={toggleMenu}>Recipes</a>
-        <a href="#workouts" onClick={toggleMenu}>Workouts</a>
-        <a href="#about" onClick={toggleMenu}>About us</a>
+        <Link to="home" smooth={true} duration={500} onClick={toggleMenu}>Home</Link>
+        <Link to="recipes" smooth={true} duration={500} onClick={toggleMenu}>Recipes</Link>
+        <Link to="workouts" smooth={true} duration={500} onClick={toggleMenu}>Workouts</Link>
+        <Link to="about" smooth={true} duration={500} onClick={toggleMenu}>About us</Link>
       </nav>
     </header>
   );

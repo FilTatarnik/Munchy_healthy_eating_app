@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Recipes from './Recipes';
 import Workouts from './Workouts';
 import AboutUs from './AboutUs';
+import healthyFoodImage from '../assets/image1.jpg';
 
 const Main = () => {
   const [email, setEmail] = useState('');
@@ -39,9 +40,9 @@ const Main = () => {
 
       <Recipes />
 
-      <div className="full-width-image">
-        <img src="/api/placeholder/1920/600" alt="Healthy food" />
-      </div>
+      {/* <div className="full-width-image">
+        <img src={healthyFoodImage} alt="Healthy food" />
+      </div> */}
 
       <Workouts />
 

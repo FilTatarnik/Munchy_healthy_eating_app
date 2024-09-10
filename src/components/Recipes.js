@@ -6,13 +6,27 @@ const Recipes = () => {
 
   const recipesData = [
     {
-      id: 1,
-      title: "Quinoa Salad",
-      description: "A refreshing and nutritious salad packed with protein and vitamins.",
-      fullDescription: "This quinoa salad is perfect for a light lunch or dinner. It's packed with nutrients and can be customized with your favorite vegetables.",
-      ingredients: ["1 cup quinoa", "2 cups water", "1 cucumber, diced", "1 tomato, diced", "1/4 cup olive oil", "2 tbsp lemon juice", "Salt and pepper to taste"],
-      instructions: ["Cook quinoa according to package instructions.", "While quinoa is cooling, mix cucumber and tomato in a large bowl.", "In a small bowl, whisk together olive oil, lemon juice, salt, and pepper.", "Add cooled quinoa to the vegetables and pour the dressing over. Toss to combine.", "Chill for at least 30 minutes before serving."],
-      link: "https://example.com/quinoa-salad-recipe"
+      title: "Meal Prep Chipotle Ground Beef",
+      description: "A hearty meal with seasoned ground beef, vegetables, and rice.",
+      fullDescription: "This recipe features flavorful ground beef, paired with sautéed vegetables and perfectly cooked rice. Ideal for meal prepping, it's packed with protein, fiber, and nutrients.",
+      ingredients: [
+        "1lb Ground Beef (grass-fed recommended)",
+        "2-3 Cloves of Garlic",
+        "1 Large Broccoli Head",
+        "1 Bunch of Spinach",
+        "1 Medium Sized Red Onion",
+        "Olive Oil (enough for sautéing)",
+        "1 Can of Black Beans (optional)",
+        "1.5 cups White Rice (Three Horse Brand recommended)",
+        "Salt and pepper to taste"
+      ],
+      instructions: [
+        "Heat olive oil in a pan and sauté one chopped garlic clove. Add the ground beef, breaking it up with a wooden utensil. Season with salt and pepper, and cook until browned and crispy. Optionally, add black beans and cook for another 5 minutes.",
+        "For the veggies, rinse and dry the broccoli and spinach. Chop them along with the onion. Toss with olive oil, salt, and pepper, and sauté in a large pan for 8-10 minutes until softened. Strain to remove excess moisture.",
+        "Rinse the rice and cook in a rice cooker with salt, pepper, and a bit of olive oil. Once done, fluff the rice and set aside.",
+        "Assemble the meal by combining portions of beef, vegetables, and rice. Store in glass containers for easy meal prep."
+      ],
+      link: "https://example.com/meal-prep-chipotle-ground-beef"
     },
     // Add more recipes with similar structure
   ];
@@ -20,7 +34,7 @@ const Recipes = () => {
   return (
     <section id="recipes" className="section">
       <div className="recipes">
-        <h2>Latest Healthy Recipes</h2>
+        <h2>Stuff I like to eat</h2>
         <div className="recipe-grid">
           {recipesData.map(recipe => (
             <div key={recipe.id} className="recipe-item" onClick={() => setSelectedRecipe(recipe)}>

@@ -7,8 +7,8 @@ const Workouts = () => {
   const workoutsData = [
     {
       id: 1,
-      title: "30-Minute HIIT Cardio",
-      description: "Burn calories and boost your metabolism with this high-intensity workout.",
+      title: "Push",
+      description: "",
       fullDescription: "This HIIT workout is designed to maximize calorie burn and improve cardiovascular fitness in just 30 minutes.",
       exercises: [
         { name: "Jump Squats", duration: "45 seconds" },
@@ -17,15 +17,44 @@ const Workouts = () => {
         { name: "Mountain Climbers", duration: "45 seconds" }
       ],
       instructions: ["Perform each exercise for 45 seconds", "Rest for 15 seconds between exercises", "Complete 3 rounds of the circuit", "Cool down with 5 minutes of light stretching"],
-      link: "https://example.com/hiit-cardio-workout"
+      // link: "https://example.com/hiit-cardio-workout"
     },
-    // Add more workouts with similar structure
+    {
+      id: 2,
+      title: 'Pull',
+      description: "",
+      fullDescription: "",
+      exercises: [
+        { name: "Pull-ups", duration: "45 seconds" },
+        { name: "Bent-over Rows", duration: "45 seconds" },
+        { name: "Reverse Flys", duration: "45 seconds" },
+        { name: "Hammer Curls", duration: "45 seconds" }
+      ],
+      instructions: ["Perform each exercise for 45 seconds", "Rest for 15 seconds between exercises", "Complete 3 rounds of the circuit", "Cool down with 5 minutes of light stretching"],
+      // link: "https://example.com/hiit-cardio-workout",
+    },
+    {
+      id: 3,
+      title: 'Legs',
+      description: "",
+      fullDescription: "",
+      exercises: [
+        { name: "Squats", duration: "45 seconds" },
+        { name: "Lunges", duration: "45 seconds" },
+        { name: "Deadlifts", duration: "45 seconds" },
+        { name: "Calf Raises", duration: "45 seconds" }
+      ],
+      instructions: ["Perform each exercise for 45 seconds", "Rest for 15 seconds between exercises", "Complete 3 rounds of the circuit", "Cool down with 5 minutes of light stretching"],
+      // link: "https://example.com/hiit-cardio-workout",
+
+    },
+
   ];
 
   return (
     <section id="workouts" className="section">
       <div className="workouts">
-        <h2>Featured Workouts</h2>
+        <h2>Current Workouts</h2>
         <div className="workout-grid">
           {workoutsData.map(workout => (
             <div key={workout.id} className="workout-item" onClick={() => setSelectedWorkout(workout)}>

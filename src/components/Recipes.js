@@ -16,7 +16,7 @@ const Recipes = () => {
         "1 Bunch of Spinach",
         "1 Medium Sized Red Onion",
         "Olive Oil (enough for sautéing)",
-        "1 Can of Black Beans (optional)",
+        "1 Can of Black Beans",
         "1.5 cups White Rice (Three Horse Brand recommended)",
         "Salt and pepper to taste"
       ],

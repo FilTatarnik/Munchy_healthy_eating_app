@@ -6,7 +6,7 @@ const Recipes = () => {
 
   const recipesData = [
     {
-      title: "Meal Prep Chipotle Ground Beef",
+      title: "Meal Prep Ground Beef/Black Beans + Veggies",
       description: "A hearty meal with seasoned ground beef, vegetables, and rice.",
       fullDescription: "This recipe features flavorful ground beef, paired with sautéed vegetables and perfectly cooked rice. Ideal for meal prepping, it's packed with protein, fiber, and nutrients.",
       ingredients: [

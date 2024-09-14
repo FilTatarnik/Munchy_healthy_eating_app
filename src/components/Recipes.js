@@ -28,6 +28,33 @@ const Recipes = () => {
       ],
       link: "https://example.com/meal-prep-chipotle-ground-beef"
     },
+    {
+      title: "Classic Chicken Parmesan",
+      description: "Crispy breaded chicken cutlets topped with marinara sauce and melted cheese.",
+      fullDescription: "Thin chicken cutlets coated in seasoned Italian breadcrumbs, pan-fried to golden perfection, then topped with rich marinara sauce and melted mozzarella cheese. Finished under the broiler for that irresistible cheesy crust.",
+      ingredients: [
+        "2 chicken breasts, pounded thin",
+        "2 cups Italian seasoned breadcrumbs",
+        "2 large eggs, beaten",
+        "1/4 cup olive oil",
+        "4 cloves garlic, minced",
+        "2 cups marinara sauce",
+        "2 cups shredded mozzarella cheese",
+        "1/4 cup grated Parmesan cheese",
+        "Salt and pepper to taste",
+        "Fresh basil leaves for garnish"
+      ],
+      instructions: [
+        "Set up a breading station with three shallow dishes: one with flour, one with beaten eggs, and one with Breadcrumbs.",
+        "Slice your cutletts into 2-3 thinner cutlets. The chicken to breading ration has to be good, you don't want your chicken too thick. Season the chicken cutlets with salt and pepper. Dredge each cutlet in egg, and finally coat with breadcrumbs, you want to get every square cm of this cutlet coated. Sprinkle more ontop then firmly press onto the cutlet to make it stick. No naked spots allowed.",
+        "In a large skillet, heat olive oil or any other high smoke point oil you have. I don't like using Extra Virgin Olive Oil because over medium heat. Add minced garlic and sauté for about 30 seconds until fragrant.",
+        "Cook the breaded chicken cutlets in the garlic-infused oil for 3-4 minutes per side, until golden brown and cooked through. Work in batches if necessary.",
+        "Transfer the cooked cutlets to a baking sheet. Top each cutlet with marinara sauce, shredded mozzarella, and grated Parmesan.",
+        "Place under the broiler for 2-3 minutes, or until the cheese is melted and bubbly with some golden spots.",
+        "Garnish with fresh basil leaves before serving."
+      ],
+      link: "https://example.com/classic-chicken-parmesan"
+    }
     // Add more recipes with similar structure
   ];
 

@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Munchy_healthy_eating_app/static/css/main.55946575.css",
-    "main.js": "/Munchy_healthy_eating_app/static/js/main.a0660e97.js",
+    "main.js": "/Munchy_healthy_eating_app/static/js/main.2943a62e.js",
     "static/js/453.7ee3356d.chunk.js": "/Munchy_healthy_eating_app/static/js/453.7ee3356d.chunk.js",
     "static/media/image1.jpg": "/Munchy_healthy_eating_app/static/media/image1.3990038a319fab2a54cc.jpg",
     "index.html": "/Munchy_healthy_eating_app/index.html",
     "main.55946575.css.map": "/Munchy_healthy_eating_app/static/css/main.55946575.css.map",
-    "main.a0660e97.js.map": "/Munchy_healthy_eating_app/static/js/main.a0660e97.js.map",
+    "main.2943a62e.js.map": "/Munchy_healthy_eating_app/static/js/main.2943a62e.js.map",
     "453.7ee3356d.chunk.js.map": "/Munchy_healthy_eating_app/static/js/453.7ee3356d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.55946575.css",
-    "static/js/main.a0660e97.js"
+    "static/js/main.2943a62e.js"
   ]
 }

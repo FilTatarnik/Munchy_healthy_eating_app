@@ -5,7 +5,7 @@ const Recipes = () => {
   const [selectedRecipe, setSelectedRecipe] = useState(null);
 
   const recipesData = [
-    {
+    { 
       title: "Ground Beef/Black Beans + Veggies",
       description: "A hearty meal with seasoned ground beef, vegetables, and rice.",
       fullDescription: "This recipe features flavorful ground beef, paired with sautéed vegetables and perfectly cooked rice. Ideal for meal prepping, it's packed with protein, fiber, and nutrients.",
@@ -116,7 +116,7 @@ const Recipes = () => {
                 <li key={index}>{step}</li>
               ))}
             </ol>
-            <a href={selectedRecipe.link} target="_blank" rel="noopener noreferrer">View Full Recipe</a>
+            {/* <a href={selectedRecipe.link} target="_blank" rel="noopener noreferrer">View Full Recipe</a> */}
           </div>
         )}
       </Modal>

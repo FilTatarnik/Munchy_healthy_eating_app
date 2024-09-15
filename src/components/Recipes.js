@@ -6,7 +6,7 @@ const Recipes = () => {
 
   const recipesData = [
     {
-      title: "Meal Prep Ground Beef/Black Beans + Veggies",
+      title: "Ground Beef/Black Beans + Veggies",
       description: "A hearty meal with seasoned ground beef, vegetables, and rice.",
       fullDescription: "This recipe features flavorful ground beef, paired with sautéed vegetables and perfectly cooked rice. Ideal for meal prepping, it's packed with protein, fiber, and nutrients.",
       ingredients: [
@@ -54,6 +54,34 @@ const Recipes = () => {
         "Garnish with fresh basil leaves before serving."
       ],
       link: "https://example.com/classic-chicken-parmesan"
+    },
+    {
+      title: "Oven Roasted Tomato Soup",
+      description: "A rich and flavorful tomato soup made with oven-roasted vegetables, sized for a 9x11 sheet pan.",
+      fullDescription: "This comforting Oven Roasted Tomato Soup brings out the natural sweetness of tomatoes through high-heat roasting. Garlic and onions add depth, while a touch of cream lends silky smoothness. This smaller batch is perfect for a 9x11 sheet pan, ideal for 2-3 servings.",
+      ingredients: [
+        "1 lb ripe tomatoes, quartered (about 4-5 medium tomatoes)",
+        "1 medium onion, cut into wedges",
+        "4 cloves garlic, peeled",
+        "2 tbsp olive oil",
+        "1 tsp dried thyme",
+        "1/2 tsp dried oregano",
+        "Salt and freshly ground black pepper to taste",
+        "1/4 cup heavy cream",
+        "Fresh basil leaves for garnish (optional)"
+      ],
+      instructions: [
+        "Preheat the oven to 450°F (230°C).",
+        "On a 9x11 inch baking sheet, spread out the quartered tomatoes, onion wedges, and garlic cloves in a single layer.",
+        "Drizzle the vegetables with olive oil and sprinkle with thyme, oregano, salt, and pepper. Toss to coat evenly.",
+        "Roast in the preheated oven for about 40-60 minutes, or until the vegetables are soft and are caramelizing.",
+        "Use an immersion blender to puree the soup until smooth. Alternatively, carefully transfer the soup to a blender to puree.",
+        "Transfer the blended vegetables to a medium pot. Bring to a simmer over medium heat.",
+        "Stir in the heavy cream and adjust seasoning if needed.",
+        "Simmer for an additional 5 minutes to let the flavors meld.",
+        "Serve hot, garnished with fresh basil leaves if desired."
+      ],
+      link: "https://example.com/small-batch-oven-roasted-tomato-soup"
     }
     // Add more recipes with similar structure
   ];

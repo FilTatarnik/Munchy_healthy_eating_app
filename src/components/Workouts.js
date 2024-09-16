@@ -81,7 +81,7 @@ const Workouts = () => {
                 <li key={index}>{instruction}</li>
               ))}
             </ol>
-            <a href={selectedWorkout.link} target="_blank" rel="noopener noreferrer">View Full Workout</a>
+            {/* <a href={selectedWorkout.link} target="_blank" rel="noopener noreferrer">View Full Workout</a> */}
           </div>
         )}
       </Modal>

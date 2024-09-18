@@ -9,42 +9,53 @@ const Workouts = () => {
       id: 1,
       title: "Push",
       description: "",
-      fullDescription: "This HIIT workout is designed to maximize calorie burn and improve cardiovascular fitness in just 30 minutes.",
+      fullDescription: "Ideally I'd have two push workouts a week. One that is Chest focused and one that is Shoulder focused. What works for me is volume. I may not push the most weight all the time, but I'll get the reps in.",
       exercises: [
-        { name: "Jump Squats", duration: "45 seconds" },
-        { name: "Push-ups", duration: "45 seconds" },
-        { name: "Burpees", duration: "45 seconds" },
-        { name: "Mountain Climbers", duration: "45 seconds" }
+        { name: "Flat Bench Press" },
+        { name: "Shoulder Press - Seated/Standing" },
+        { name: "Incline/Decline Bench Press" },
+        { name: "Chest McFlys" },
+        { name: "Rear Delt Fly"},
+        { name: "Close-Grip Bench Press"},
+        { name: "Skullcrushers"},
+        { name: "Tricep extension Variants"}
       ],
-      instructions: ["Perform each exercise for 45 seconds", "Rest for 15 seconds between exercises", "Complete 3 rounds of the circuit", "Cool down with 5 minutes of light stretching"],
+      instructions: ["Try getting at least 5-7 sets of 5 reps. If you're comfortable with the weight you can go for 3-4 sets for 10 reps and continue doing reps while bringing weight down.","If Chest focused day, start with Bench Press. If Shoulder focused day, start with Shoulder Press"],
       // link: "https://example.com/hiit-cardio-workout"
     },
     {
       id: 2,
       title: 'Pull',
       description: "",
-      fullDescription: "",
+      fullDescription: "Same with Push Days, I like having two Pull days a week. One that's Row Focused and One that's Lat focused.",
       exercises: [
-        { name: "Pull-ups", duration: "45 seconds" },
-        { name: "Bent-over Rows", duration: "45 seconds" },
-        { name: "Reverse Flys", duration: "45 seconds" },
-        { name: "Hammer Curls", duration: "45 seconds" }
+        { name: "Deadlifts"},
+        { name: "Lat Pulldown"},
+        { name: "Seated Rows"},
+        { name: "Pull-ups" },
+        { name: "Bent-over Rows" },
+        { name: "Reverse Flys" },
+        { name: "Hammer Curls" },
+        { name: "Standing Rope Curls"},
+        { name: "Chin ups"}
       ],
-      instructions: ["Perform each exercise for 45 seconds", "Rest for 15 seconds between exercises", "Complete 3 rounds of the circuit", "Cool down with 5 minutes of light stretching"],
+      instructions: ["Try getting at least 5-7 sets of 5 reps. If you're comfortable with the weight you can go for 3-4 sets for 10 reps and continue doing reps while bringing weight down.","If Row focused day, start with Seated Row or Deadlift, then proceed to do the other one. If Lat focused day, start with Lat Pull Down"],
       // link: "https://example.com/hiit-cardio-workout",
     },
     {
       id: 3,
       title: 'Legs',
       description: "",
-      fullDescription: "",
+      fullDescription: "Two Leg days a week. One that's Squat heavy, and One that is hamstring focused.",
       exercises: [
-        { name: "Squats", duration: "45 seconds" },
-        { name: "Lunges", duration: "45 seconds" },
-        { name: "Deadlifts", duration: "45 seconds" },
-        { name: "Calf Raises", duration: "45 seconds" }
+        { name: "Squats" },
+        { name: "Leg press | Calf Presses in between sets" },
+        { name: "Laying Hamstring Curls" },
+        { name: "Calf Raises" },
+        { name: "Seated Calf Extensions"},
+        { name: "Wall sits"}
       ],
-      instructions: ["Perform each exercise for 45 seconds", "Rest for 15 seconds between exercises", "Complete 3 rounds of the circuit", "Cool down with 5 minutes of light stretching"],
+      instructions: ["If Squat focus, start with Squat", "If Hamstring focus, start with Laying Hamstring Curls", "Heavy, Heavy, Heavy. Then work your way down to light weight but more reps.", "After doing Leg Press Sets, do a Set of Calf Presses while you're waiting."],
       // link: "https://example.com/hiit-cardio-workout",
 
     },
@@ -72,7 +83,7 @@ const Workouts = () => {
             <h3>Exercises:</h3>
             <ul>
               {selectedWorkout.exercises.map((exercise, index) => (
-                <li key={index}>{exercise.name} - {exercise.duration}</li>
+                <li key={index}>{exercise.name}</li>
               ))}
             </ul>
             <h3>Instructions:</h3>
